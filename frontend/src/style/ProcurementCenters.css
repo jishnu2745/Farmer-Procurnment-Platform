@@ -1,0 +1,375 @@
+
+
+.centers-container {
+  min-height: 100vh;
+  background: #f4f7f1;
+  padding: 40px 20px;
+
+  font-family: Arial, sans-serif;
+}
+
+
+/* ================================
+   CONTENT
+================================ */
+
+.centers-content {
+  width: 100%;
+  max-width: 850px;
+  margin: auto;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.centers-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  margin-bottom: 25px;
+}
+
+.header-icon {
+  width: 55px;
+  height: 55px;
+
+  background: #e7f1e4;
+
+  border-radius: 13px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 27px;
+}
+
+
+.centers-header h1 {
+  margin: 0;
+
+  color: #294d2b;
+
+  font-size: 28px;
+}
+
+
+.centers-header p {
+  margin: 6px 0 0;
+
+  color: #777;
+
+  font-size: 14px;
+}
+
+
+/* ================================
+   LOCATION STATUS
+================================ */
+
+.location-status {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  background: #edf5e9;
+
+  border: 1px solid #dce9d8;
+
+  border-radius: 12px;
+
+  padding: 15px 18px;
+
+  margin-bottom: 25px;
+}
+
+
+.location-status > span {
+  font-size: 22px;
+}
+
+
+.location-status strong {
+  color: #315b33;
+
+  font-size: 14px;
+}
+
+
+.location-status p {
+  margin: 4px 0 0;
+
+  color: #777;
+
+  font-size: 12px;
+}
+
+
+/* ================================
+   CENTRES LIST
+================================ */
+
+.centers-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+
+/* ================================
+   CENTRE CARD
+================================ */
+
+.procurement-center-card {
+  background: #ffffff;
+
+  border: 1px solid #e2e8df;
+
+  border-radius: 15px;
+
+  padding: 22px;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 18px;
+
+  transition: all 0.2s ease;
+}
+
+
+.procurement-center-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 7px 22px rgba(0, 0, 0, 0.06);
+
+  border-color: #cbdcc7;
+}
+
+
+/* ================================
+   CENTRE ICON
+================================ */
+
+.center-icon {
+  width: 55px;
+  height: 55px;
+
+  background: #edf5e9;
+
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 25px;
+
+  flex-shrink: 0;
+}
+
+
+/* ================================
+   CENTRE DETAILS
+================================ */
+
+.center-details {
+  flex: 1;
+}
+
+
+.center-details h3 {
+  margin: 0 0 12px;
+
+  color: #304c31;
+
+  font-size: 18px;
+
+  line-height: 1.4;
+}
+
+
+/* ================================
+   INFORMATION ROW
+================================ */
+
+.center-info-row {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  margin-bottom: 16px;
+}
+
+
+.center-info-row span {
+  font-size: 13px;
+
+  color: #777;
+}
+
+
+/* ================================
+   WAITING STATUS
+================================ */
+
+.center-info-row .waiting-low {
+  color: #3f733f;
+
+  font-weight: 600;
+}
+
+
+.center-info-row .waiting-medium {
+  color: #8a7438;
+
+  font-weight: 600;
+}
+
+
+.center-info-row .waiting-high {
+  color: #a05245;
+
+  font-weight: 600;
+}
+
+
+/* ================================
+   SELECT BUTTON
+================================ */
+
+.select-center-button {
+  border: none;
+
+  background: #3f733f;
+
+  color: white;
+
+  height: 42px;
+
+  padding: 0 20px;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+
+.select-center-button:hover {
+  background: #315e32;
+
+  transform: translateY(-1px);
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+  .centers-container {
+    padding: 25px 14px;
+  }
+
+
+  .centers-header {
+    gap: 12px;
+  }
+
+
+  .header-icon {
+    width: 48px;
+    height: 48px;
+
+    font-size: 23px;
+  }
+
+
+  .centers-header h1 {
+    font-size: 23px;
+  }
+
+
+  .centers-header p {
+    font-size: 12px;
+  }
+
+
+  .procurement-center-card {
+    padding: 18px;
+
+    gap: 13px;
+  }
+
+
+  .center-icon {
+    width: 45px;
+    height: 45px;
+
+    font-size: 21px;
+  }
+
+
+  .center-details h3 {
+    font-size: 16px;
+  }
+
+
+  .center-info-row {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 7px;
+  }
+
+
+  .select-center-button {
+    width: 100%;
+
+    height: 44px;
+  }
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 380px) {
+
+  .centers-container {
+    padding: 20px 10px;
+  }
+
+
+  .procurement-center-card {
+    padding: 15px;
+  }
+
+
+  .center-details h3 {
+    font-size: 15px;
+  }
+
+
+  .center-info-row span {
+    font-size: 12px;
+  }
+}

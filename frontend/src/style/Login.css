@@ -1,0 +1,535 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f8f1;
+  color: #263528;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------------- HEADER ---------------- */
+
+.login-header {
+  height: 76px;
+  background: white;
+  border-bottom: 1px solid #e3e9df;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 7%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #e9f4e4;
+  border-radius: 12px;
+
+  font-size: 25px;
+}
+
+.logo h2 {
+  margin: 0;
+  font-size: 19px;
+  color: #245c2c;
+}
+
+.logo span:last-child {
+  display: block;
+  font-size: 11px;
+  color: #788477;
+  margin-top: 3px;
+}
+
+.language {
+  color: #526052;
+  font-size: 14px;
+}
+
+/* ---------------- MAIN ---------------- */
+
+.login-main {
+  flex: 1;
+
+  width: 100%;
+  max-width: 1180px;
+
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 420px;
+
+  gap: 80px;
+
+  align-items: center;
+
+  padding: 60px 30px;
+}
+
+/* ---------------- WELCOME ---------------- */
+
+.welcome-section {
+  max-width: 620px;
+}
+
+.farmer-icon {
+  width: 70px;
+  height: 70px;
+
+  background: #e1efdc;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 38px;
+
+  margin-bottom: 25px;
+}
+
+.welcome-section h1 {
+  font-size: 46px;
+  line-height: 1.15;
+
+  margin: 0 0 20px;
+
+  color: #1f3824;
+}
+
+.welcome-section h1 span {
+  color: #3c7d38;
+}
+
+.welcome-section > p {
+  font-size: 17px;
+  line-height: 1.7;
+
+  color: #657165;
+
+  max-width: 560px;
+
+  margin-bottom: 35px;
+}
+
+/* ---------------- FEATURES ---------------- */
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.feature-icon {
+  width: 45px;
+  height: 45px;
+
+  flex-shrink: 0;
+
+  background: white;
+
+  border: 1px solid #dce7d8;
+
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+}
+
+.feature strong {
+  display: block;
+
+  font-size: 14px;
+
+  color: #304333;
+
+  margin-bottom: 3px;
+}
+
+.feature p {
+  margin: 0;
+
+  font-size: 13px;
+
+  color: #7a847a;
+}
+
+/* ---------------- LOGIN CARD ---------------- */
+
+.login-card {
+  background: white;
+
+  border: 1px solid #e0e8dd;
+
+  border-radius: 18px;
+
+  padding: 38px;
+
+  box-shadow:
+    0 12px 40px rgba(42, 72, 45, 0.08);
+}
+
+.card-header {
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+.mobile-icon {
+  width: 52px;
+  height: 52px;
+
+  background: #eaf5e7;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+
+  margin: 0 auto 15px;
+}
+
+.card-header h2 {
+  margin: 0;
+
+  font-size: 25px;
+
+  color: #263b29;
+}
+
+.card-header p {
+  margin: 9px 0 0;
+
+  color: #7a837a;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+/* ---------------- INPUT ---------------- */
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #354536;
+
+  margin-bottom: 8px;
+}
+
+.mobile-input {
+  display: flex;
+
+  height: 52px;
+
+  border: 1px solid #cfd9cc;
+
+  border-radius: 9px;
+
+  overflow: hidden;
+
+  transition: 0.2s;
+}
+
+.mobile-input:focus-within {
+  border-color: #4d8c47;
+
+  box-shadow: 0 0 0 3px rgba(77, 140, 71, 0.1);
+}
+
+.country-code {
+  background: #f5f8f3;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 14px;
+
+  color: #4f5c4f;
+
+  font-size: 14px;
+
+  border-right: 1px solid #d8e0d5;
+}
+
+.mobile-input input {
+  flex: 1;
+
+  border: none;
+
+  outline: none;
+
+  padding: 0 14px;
+
+  font-size: 15px;
+
+  color: #273729;
+
+  min-width: 0;
+}
+
+.mobile-input input::placeholder {
+  color: #a0a8a0;
+}
+
+.form-group small {
+  display: block;
+
+  margin-top: 8px;
+
+  color: #899189;
+
+  font-size: 11px;
+}
+
+/* ---------------- BUTTON ---------------- */
+
+.otp-button {
+  width: 100%;
+
+  height: 52px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #3e7d3a;
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  transition: 0.2s;
+}
+
+.otp-button:hover {
+  background: #326930;
+}
+
+.otp-button span {
+  font-size: 20px;
+}
+
+/* ---------------- SECURITY ---------------- */
+
+.security-note {
+  text-align: center;
+
+  margin: 17px 0;
+
+  font-size: 11px;
+
+  color: #788378;
+}
+
+/* ---------------- DIVIDER ---------------- */
+
+.divider {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #a0a7a0;
+
+  font-size: 12px;
+
+  margin: 22px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+
+  flex: 1;
+
+  height: 1px;
+
+  background: #e6ebe4;
+}
+
+/* ---------------- REGISTER ---------------- */
+
+.register-button {
+  width: 100%;
+
+  height: 48px;
+
+  border-radius: 9px;
+
+  border: 1px solid #4c8848;
+
+  background: white;
+
+  color: #397136;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.register-button:hover {
+  background: #f1f8ef;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+.login-footer {
+  height: 55px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-size: 11px;
+
+  color: #8a9389;
+
+  border-top: 1px solid #e3e9df;
+
+  background: white;
+}
+
+/* ---------------- MOBILE ---------------- */
+
+@media (max-width: 850px) {
+
+  .login-header {
+    padding: 0 20px;
+  }
+
+  .login-main {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+
+    padding: 40px 20px;
+  }
+
+  .welcome-section {
+    text-align: center;
+    margin: auto;
+  }
+
+  .farmer-icon {
+    margin: 0 auto 20px;
+  }
+
+  .welcome-section h1 {
+    font-size: 34px;
+  }
+
+  .welcome-section > p {
+    font-size: 15px;
+  }
+
+  .features {
+    text-align: left;
+
+    max-width: 400px;
+
+    margin: auto;
+  }
+
+  .login-card {
+    width: 100%;
+    max-width: 430px;
+
+    margin: auto;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .login-header {
+    height: 68px;
+  }
+
+  .logo h2 {
+    font-size: 16px;
+  }
+
+  .language {
+    font-size: 12px;
+  }
+
+  .welcome-section h1 {
+    font-size: 29px;
+  }
+
+  .welcome-section > p {
+    font-size: 14px;
+  }
+
+  .login-card {
+    padding: 28px 22px;
+  }
+
+  .login-footer {
+    display: none;
+  }
+}
+

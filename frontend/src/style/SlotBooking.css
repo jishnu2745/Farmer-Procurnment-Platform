@@ -1,0 +1,293 @@
+
+
+.slot-container {
+  min-height: 100vh;
+  background: #f4f7f1;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: Arial, sans-serif;
+}
+
+
+/* ================================
+   BOOKING CARD
+================================ */
+
+.slot-card {
+  width: 100%;
+  max-width: 650px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 35px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.slot-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.slot-header h2 {
+  margin: 0;
+  color: #294d2b;
+  font-size: 28px;
+}
+
+.slot-header p {
+  color: #777;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+
+/* ================================
+   CENTER INFORMATION
+================================ */
+
+.center-info {
+  background: #edf5e9;
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin-bottom: 30px;
+  border-left: 4px solid #3f733f;
+}
+
+.center-info h3 {
+  margin: 0 0 8px;
+  color: #315b33;
+  font-size: 19px;
+}
+
+.center-info p {
+  margin: 4px 0;
+  color: #687267;
+  font-size: 14px;
+}
+
+
+/* ================================
+   SECTION TITLE
+================================ */
+
+.slot-section-title {
+  margin-bottom: 15px;
+}
+
+.slot-section-title h3 {
+  margin: 0;
+  color: #354635;
+  font-size: 18px;
+}
+
+.slot-section-title p {
+  margin: 5px 0 0;
+  color: #888;
+  font-size: 13px;
+}
+
+
+/* ================================
+   TIME SLOTS
+================================ */
+
+.slots-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+/* ================================
+   SLOT BUTTON
+================================ */
+
+.slot-button {
+  width: 100%;
+  min-height: 55px;
+
+  background: #ffffff;
+  border: 1px solid #d7ded4;
+  border-radius: 10px;
+
+  color: #3f493f;
+  font-size: 15px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 18px;
+
+  transition: all 0.2s ease;
+}
+
+
+/* Time icon */
+
+.slot-button::before {
+  content: "🕐";
+  font-size: 18px;
+}
+
+
+/* Arrow */
+
+.slot-button::after {
+  content: "›";
+  font-size: 24px;
+  color: #9aa39a;
+}
+
+
+/* Hover */
+
+.slot-button:hover {
+  border-color: #5c875c;
+  background: #f7faf5;
+}
+
+
+/* Selected slot */
+
+.slot-button.selected {
+  background: #e8f2e5;
+  border: 2px solid #3f733f;
+  color: #28552a;
+  font-weight: 600;
+}
+
+
+/* Selected slot arrow */
+
+.slot-button.selected::after {
+  content: "✓";
+  color: #3f733f;
+  font-size: 20px;
+}
+
+
+/* ================================
+   CONFIRM BUTTON
+================================ */
+
+.confirm-button {
+  width: 100%;
+  height: 50px;
+
+  margin-top: 30px;
+
+  border: none;
+  border-radius: 9px;
+
+  background: #3f733f;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.confirm-button:hover {
+  background: #315e32;
+  transform: translateY(-1px);
+}
+
+.confirm-button:active {
+  transform: translateY(0);
+}
+
+
+/* ================================
+   BACK BUTTON
+================================ */
+
+.back-button {
+  width: 100%;
+  height: 45px;
+
+  margin-top: 12px;
+
+  border: 1px solid #d0d8cd;
+  border-radius: 9px;
+
+  background: white;
+  color: #596459;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background: #f5f7f3;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+  .slot-container {
+    padding: 20px 12px;
+  }
+
+  .slot-card {
+    padding: 25px 18px;
+    border-radius: 14px;
+  }
+
+  .slot-header h2 {
+    font-size: 24px;
+  }
+
+  .center-info {
+    padding: 16px;
+  }
+
+  .slot-button {
+    min-height: 52px;
+    font-size: 14px;
+    padding: 0 14px;
+  }
+
+  .confirm-button {
+    height: 48px;
+  }
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 380px) {
+
+  .slot-card {
+    padding: 22px 14px;
+  }
+
+  .slot-header h2 {
+    font-size: 21px;
+  }
+
+  .slot-button {
+    font-size: 13px;
+  }
+}
+

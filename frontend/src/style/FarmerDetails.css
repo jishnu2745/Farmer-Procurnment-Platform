@@ -1,0 +1,311 @@
+
+.farmer-container {
+  min-height: 100vh;
+  background: #f4f7f1;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: Arial, sans-serif;
+}
+
+
+/* ================================
+   MAIN CARD
+================================ */
+
+.farmer-card {
+  width: 100%;
+  max-width: 950px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 35px 40px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.farmer-card h1 {
+  margin: 0;
+  text-align: center;
+  color: #294d2b;
+  font-size: 30px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #777;
+  margin: 10px 0 35px;
+  font-size: 14px;
+}
+
+
+/* ================================
+   FORM SECTION
+================================ */
+
+.form-section {
+  margin-bottom: 30px;
+  padding: 25px;
+  border: 1px solid #e3e9df;
+  border-radius: 14px;
+  background: #fbfcfa;
+}
+
+
+/* ================================
+   SECTION TITLE
+================================ */
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e4e9e1;
+}
+
+.section-title > span {
+  width: 48px;
+  height: 48px;
+  background: #e8f2e5;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 25px;
+}
+
+.section-title h2 {
+  margin: 0;
+  color: #315b33;
+  font-size: 20px;
+}
+
+.section-title p {
+  margin: 4px 0 0;
+  color: #888;
+  font-size: 13px;
+}
+
+
+/* ================================
+   FORM GRID
+================================ */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+
+/* ================================
+   FORM GROUP
+================================ */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 7px;
+  color: #3d493d;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group label span {
+  color: #d9534f;
+}
+
+
+/* ================================
+   INPUTS
+================================ */
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  height: 45px;
+  padding: 0 13px;
+
+  border: 1px solid #d7ded4;
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #333;
+
+  font-size: 14px;
+
+  outline: none;
+  transition: 0.2s;
+}
+
+.form-group input::placeholder {
+  color: #aaa;
+}
+
+
+/* Input focus */
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #4d814d;
+  box-shadow: 0 0 0 3px rgba(77, 129, 77, 0.10);
+}
+
+
+/* ================================
+   SELECT
+================================ */
+
+.form-group select {
+  cursor: pointer;
+}
+
+
+/* ================================
+   BUTTON SECTION
+================================ */
+
+.button-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+
+/* ================================
+   BACK BUTTON
+================================ */
+
+.back-button {
+  height: 46px;
+  padding: 0 25px;
+
+  border: 1px solid #cdd6ca;
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #536053;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.back-button:hover {
+  background: #f1f4ef;
+}
+
+
+/* ================================
+   CONTINUE BUTTON
+================================ */
+
+.continue-button {
+  height: 46px;
+  padding: 0 28px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #3f733f;
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.continue-button:hover {
+  background: #315e32;
+  transform: translateY(-1px);
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 700px) {
+
+  .farmer-container {
+    padding: 20px 12px;
+  }
+
+  .farmer-card {
+    padding: 25px 18px;
+    border-radius: 12px;
+  }
+
+  .farmer-card h1 {
+    font-size: 25px;
+  }
+
+  .form-section {
+    padding: 18px 15px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .section-title h2 {
+    font-size: 18px;
+  }
+
+  .button-section {
+    flex-direction: column-reverse;
+    gap: 12px;
+  }
+
+  .back-button,
+  .continue-button {
+    width: 100%;
+  }
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 400px) {
+
+  .farmer-card {
+    padding: 20px 12px;
+  }
+
+  .form-section {
+    padding: 15px 12px;
+  }
+
+  .section-title {
+    gap: 10px;
+  }
+
+  .section-title > span {
+    width: 42px;
+    height: 42px;
+    font-size: 21px;
+  }
+
+  .section-title h2 {
+    font-size: 16px;
+  }
+
+  .section-title p {
+    font-size: 11px;
+  }
+}

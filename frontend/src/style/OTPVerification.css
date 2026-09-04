@@ -1,0 +1,521 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f8f1;
+  color: #263528;
+}
+
+
+/* =========================================
+   PAGE
+   ========================================= */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.login-header {
+  height: 76px;
+  background: #ffffff;
+  border-bottom: 1px solid #e3e9df;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 7%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #e9f4e4;
+  border-radius: 12px;
+
+  font-size: 25px;
+}
+
+.logo h2 {
+  margin: 0;
+
+  font-size: 19px;
+  color: #245c2c;
+}
+
+.logo span:last-child {
+  display: block;
+
+  font-size: 11px;
+  color: #788477;
+
+  margin-top: 3px;
+}
+
+.language {
+  color: #526052;
+  font-size: 14px;
+}
+
+
+/* =========================================
+   OTP MAIN SECTION
+   ========================================= */
+
+.otp-main {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 50px 20px;
+}
+
+
+/* =========================================
+   OTP CARD
+   ========================================= */
+
+.otp-card {
+  width: 100%;
+  max-width: 430px;
+
+  background: #ffffff;
+
+  border: 1px solid #e0e8dd;
+
+  border-radius: 18px;
+
+  padding: 42px 40px;
+
+  box-shadow:
+    0 12px 40px rgba(42, 72, 45, 0.08);
+
+  text-align: center;
+}
+
+
+/* =========================================
+   OTP ICON
+   ========================================= */
+
+.otp-icon {
+  width: 65px;
+  height: 65px;
+
+  margin: 0 auto 22px;
+
+  background: #eaf5e7;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 29px;
+}
+
+
+/* =========================================
+   OTP HEADER
+   ========================================= */
+
+.otp-header h1 {
+  margin: 0 0 12px;
+
+  font-size: 25px;
+
+  line-height: 1.3;
+
+  color: #263b29;
+}
+
+.otp-header p {
+  margin: 0 0 5px;
+
+  color: #7b847b;
+
+  font-size: 14px;
+}
+
+.otp-header strong {
+  display: block;
+
+  color: #356b34;
+
+  font-size: 15px;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================
+   OTP FORM
+   ========================================= */
+
+.otp-form {
+  margin-top: 30px;
+
+  text-align: left;
+}
+
+.otp-form label {
+  display: block;
+
+  margin-bottom: 9px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #354536;
+}
+
+
+/* =========================================
+   OTP INPUT
+   ========================================= */
+
+.otp-input {
+  width: 100%;
+  height: 58px;
+
+  border: 1px solid #cfd9cc;
+
+  border-radius: 9px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  text-align: center;
+
+  font-size: 25px;
+
+  font-weight: 600;
+
+  letter-spacing: 10px;
+
+  color: #29462d;
+
+  transition: 0.2s;
+}
+
+.otp-input::placeholder {
+  color: #c4ccc2;
+
+  letter-spacing: 8px;
+}
+
+.otp-input:focus {
+  border-color: #4d8c47;
+
+  box-shadow:
+    0 0 0 3px rgba(77, 140, 71, 0.1);
+}
+
+.otp-input.error {
+  border-color: #c75c5c;
+}
+
+
+/* =========================================
+   ERROR MESSAGE
+   ========================================= */
+
+.otp-error {
+  margin: 8px 0 0;
+
+  color: #b64d4d;
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   VERIFY BUTTON
+   ========================================= */
+
+.otp-button {
+  width: 100%;
+  height: 52px;
+
+  margin-top: 22px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #3e7d3a;
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  transition: background 0.2s ease,
+              transform 0.1s ease;
+}
+
+.otp-button:hover {
+  background: #326930;
+}
+
+.otp-button:active {
+  transform: scale(0.98);
+}
+
+.otp-button span {
+  font-size: 20px;
+}
+
+
+/* =========================================
+   RESEND OTP
+   ========================================= */
+
+.resend-section {
+  margin-top: 22px;
+
+  display: flex;
+  justify-content: center;
+
+  gap: 5px;
+
+  font-size: 12px;
+
+  color: #7e877e;
+}
+
+.resend-button {
+  border: none;
+
+  background: transparent;
+
+  padding: 0;
+
+  color: #397636;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.resend-button:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================
+   CHANGE MOBILE NUMBER
+   ========================================= */
+
+.change-number {
+  margin-top: 22px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #657165;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.change-number:hover {
+  color: #397636;
+}
+
+
+/* =========================================
+   SECURITY MESSAGE
+   ========================================= */
+
+.security-note {
+  margin-top: 25px;
+
+  padding-top: 18px;
+
+  border-top: 1px solid #edf0eb;
+
+  text-align: center;
+
+  font-size: 11px;
+
+  color: #788378;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.login-footer {
+  height: 55px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+
+  font-size: 11px;
+
+  color: #8a9389;
+
+  border-top: 1px solid #e3e9df;
+
+  background: #ffffff;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  .login-header {
+    height: 68px;
+
+    padding: 0 20px;
+  }
+
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+
+    font-size: 22px;
+  }
+
+  .logo h2 {
+    font-size: 16px;
+  }
+
+  .logo span:last-child {
+    font-size: 10px;
+  }
+
+  .language {
+    font-size: 12px;
+  }
+
+
+  .otp-main {
+    padding: 30px 16px;
+  }
+
+
+  .otp-card {
+    padding: 35px 22px;
+
+    border-radius: 15px;
+  }
+
+
+  .otp-icon {
+    width: 58px;
+    height: 58px;
+
+    font-size: 26px;
+  }
+
+
+  .otp-header h1 {
+    font-size: 22px;
+  }
+
+
+  .otp-header p {
+    font-size: 13px;
+  }
+
+
+  .otp-input {
+    height: 55px;
+
+    font-size: 23px;
+
+    letter-spacing: 8px;
+  }
+
+
+  .otp-input::placeholder {
+    letter-spacing: 6px;
+  }
+
+
+  .resend-section {
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 7px;
+  }
+
+
+  .login-footer {
+    display: none;
+  }
+}
+
+
+/* =========================================
+   SMALL PHONES
+   ========================================= */
+
+@media (max-width: 380px) {
+
+  .otp-card {
+    padding: 30px 18px;
+  }
+
+  .otp-header h1 {
+    font-size: 20px;
+  }
+
+  .otp-input {
+    font-size: 21px;
+
+    letter-spacing: 6px;
+  }
+}
+
