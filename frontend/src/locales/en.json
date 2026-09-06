@@ -1,0 +1,224 @@
+{
+  "home": "Home",
+  "welcome": "Welcome, Farmer",
+  "dashboard": "Farmer Dashboard",
+
+  "farmerDetails": "Farmer Details",
+  "bookSlot": "Book a Slot",
+  "queueStatus": "Queue Status",
+  "procurementCenters": "Procurement Centres",
+
+  "selectCentre": "Select Procurement Centre",
+  "nearbyCentres": "Nearby Procurement Centres",
+  "distance": "Distance",
+  "farmersWaiting": "Farmers Waiting",
+  "selectCentreButton": "Select Centre",
+
+  "bookProcurementSlot": "Book Procurement Slot",
+  "selectTime": "Select Time",
+  "confirmSlot": "Confirm Slot",
+
+  "slotConfirmed": "Slot Confirmed",
+  "yourQueueNumber": "Your Queue Number",
+  "farmersAhead": "Farmers ahead of you",
+  "estimatedWaitingTime": "Estimated waiting time",
+
+  "personalDetails": "Personal Details",
+  "landDetails": "Land Details",
+  "bankDetails": "Bank Details",
+
+  "name": "Name",
+  "fatherName": "Father's Name",
+  "village": "Village",
+  "district": "District",
+  "state": "State",
+
+  "surveyNumber": "Survey Number",
+  "landArea": "Land Area",
+  "crop": "Crop",
+
+  "bankName": "Bank Name",
+  "accountNumber": "Account Number",
+  "ifscCode": "IFSC Code",
+
+  "saveDetails": "Save Details",
+  "language": "Language",
+
+  "procurementPlatform": "Procurement Platform",
+  "language": "English",
+
+  "sellProduce": "Sell your produce.",
+  "skipWaiting": "Skip the waiting.",
+  "welcomeDescription": "Register your farm, book your procurement slot, and track your produce and payments—all in one place.",
+
+  "bookSlot": "Book a slot",
+  "bookSlotDescription": "Choose a convenient procurement time.",
+
+  "lessWaiting": "Less waiting",
+  "lessWaitingDescription": "Know your queue position in advance.",
+
+  "trackPayments": "Track payments",
+  "trackPaymentsDescription": "Check your procurement and payment status.",
+
+  "farmerLogin": "Farmer Login",
+  "loginDescription": "Enter your registered mobile number to continue.",
+
+  "mobileNumber": "Mobile Number",
+  "mobilePlaceholder": "Enter 10-digit number",
+  "otpDescription": "We'll send a one-time password to this number.",
+
+  "sendOTP": "Send OTP",
+  "secureInformation": "Your information is secure and protected.",
+
+  "newFarmer": "New farmer?",
+  "registerFarmer": "Register as a Farmer",
+
+  "copyright": "© 2026 FarmerConnect",
+  "farmerProcurementServices": "Farmer Procurement Services",
+
+  "invalidMobile": "Please enter a valid 10-digit mobile number",
+  "verifyMobile": "Verify your mobile number",
+"otpSentTo": "We have sent a 6-digit OTP to",
+"enterOTP": "Enter OTP",
+"completeOTP": "Please enter the complete 6-digit OTP.",
+"incorrectOTP": "Incorrect OTP. Please try again.",
+"verifyContinue": "Verify & Continue",
+"didntReceiveOTP": "Didn't receive the OTP?",
+"resendOTP": "Resend OTP",
+"otpSent": "A new OTP has been sent to your mobile number.",
+"changeMobile": "Change mobile number",
+"mobileSecurity": "Your mobile number is used securely for verification.",
+"welcomeBack": "Welcome back",
+"dashboardDescription": "Manage your details, book procurement slots, and track your queue easily.",
+
+"farmerDetailsDescription": "View and manage your personal and land details.",
+"bookSlotHomeDescription": "Choose a procurement center and book your slot.",
+"queueStatusDescription": "Check your position and estimated waiting time.",
+"centersDescription": "Find nearby procurement centers and their availability.",
+
+"currentBooking": "Current Booking",
+"noActiveBooking": "No Active Booking",
+"noBookingDescription": "You haven't booked a procurement slot yet.",
+
+"home": "Home",
+"booking": "Booking",
+"queue": "Queue",
+"centers": "Centers",
+
+ "farmerRegistration": "Farmer Registration",
+  "registrationSubtitle": "Please enter your details to complete registration.",
+
+  "personalDetails": "Personal Details",
+  "personalDetailsDescription": "Enter your basic information",
+
+  "farmerName": "Farmer Name",
+  "farmerNamePlaceholder": "Enter farmer name",
+
+  "fatherHusbandName": "Father / Husband Name",
+  "fatherHusbandPlaceholder": "Enter father / husband name",
+
+  "dateOfBirth": "Date of Birth",
+
+  "village": "Village",
+  "villagePlaceholder": "Enter village",
+
+  "district": "District",
+  "districtPlaceholder": "Enter district",
+
+  "state": "State",
+  "statePlaceholder": "Enter state",
+
+  "landDetails": "Land Details",
+  "landDetailsDescription": "Enter your agricultural land information",
+
+  "surveyNumber": "Survey Number",
+  "surveyNumberPlaceholder": "Enter survey number",
+
+  "subDivisionNumber": "Sub-Division Number",
+  "subDivisionPlaceholder": "Eg: 12/1A",
+
+  "landArea": "Land Area",
+  "landAreaPlaceholder": "Enter land area",
+
+  "areaUnit": "Area Unit",
+  "acres": "Acres",
+  "hectares": "Hectares",
+
+  "ownershipType": "Ownership Type",
+  "selectOwnership": "Select ownership",
+  "ownLand": "Own Land",
+  "leasedLand": "Leased Land",
+  "jointOwnership": "Joint Ownership",
+
+  "currentCrop": "Current Crop",
+  "cropPlaceholder": "Eg: Paddy",
+
+  "bankDetails": "Bank Details",
+  "bankDetailsDescription": "Enter the account used for procurement payments",
+
+  "accountHolderName": "Account Holder Name",
+  "accountHolderPlaceholder": "Enter account holder name",
+
+  "bankName": "Bank Name",
+  "bankNamePlaceholder": "Enter bank name",
+
+  "branchName": "Branch Name",
+  "branchNamePlaceholder": "Enter branch name",
+
+  "ifscCode": "IFSC Code",
+  "ifscPlaceholder": "Eg: SBIN0001234",
+
+  "accountNumber": "Account Number",
+  "accountNumberPlaceholder": "Enter account number",
+
+  "confirmAccountNumber": "Confirm Account Number",
+  "confirmAccountPlaceholder": "Re-enter account number",
+
+  "back": "Back",
+  "completeRegistration": "Complete Registration",
+
+  "fillRequiredFields": "Please fill all required fields",
+  "accountNumbersMismatch": "Bank account numbers do not match",
+
+  
+  "bookProcurementSlot": "Book Procurement Slot",
+  "bookProcurementSlotDescription": "Select a convenient time to visit the procurement center.",
+
+  "procurementCenter": "Procurement Center",
+  "distance": "Distance",
+  "notAvailable": "Not available",
+
+  "selectTimeSlot": "Select Time Slot",
+  "selectTimeSlotDescription": "Choose one available time slot.",
+
+  "confirmSlot": "Confirm Slot",
+  "goBack": "Go Back",
+
+  "selectSlotError": "Please select a slot",
+
+  
+  "procurementStatus": "Procurement Status",
+  "procurementConfirmed": "Your procurement slot has been confirmed.",
+
+  "procurementCentre": "Procurement Centre",
+  "procurementCenter": "Procurement Center",
+  "timeSlot": "Time Slot",
+  "notAvailable": "Not available",
+
+  "yourQueueNumber": "Your Queue Number",
+  "queueNumberNote": "Please keep this number for your visit.",
+
+  "farmersAhead": "Farmers Ahead",
+  "estimatedWait": "Estimated Wait",
+  "minutes": "min",
+
+  "queueActive": "Queue is Active",
+  "queueUpdateMessage": "Your position will update as farmers are served.",
+
+  "backToHome": "Back to Home",
+
+  "procurementCentres": "Procurement Centres", "selectProcurementCentre": "Select a procurement centre near you.", "nearbyCentres": "Nearby Centres", "nearbyCentresDescription": "Showing procurement centres closest to you.", "governmentProcurementCentre": "Government Procurement Centre", "agriculturalCooperativeCentre": "Agricultural Cooperative Centre", "primaryAgriculturalCentre": "Primary Agricultural Centre", "waiting": "waiting", "selectCentre": "Select Centre"
+
+
+
+}

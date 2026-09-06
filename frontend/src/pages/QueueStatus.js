@@ -1,11 +1,13 @@
-
 import { useLocation, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 import "../style/QueueStatus.css";
+import LanguageSelector from "../components/LanguageSelector";
 
 function QueueStatus() {
-
   const location = useLocation();
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const { center, slot } = location.state || {};
 
@@ -14,52 +16,65 @@ function QueueStatus() {
 
       <div className="queue-card">
 
-        {/* Header */}
+        {/* ================= HEADER ================= */}
+
         <div className="queue-header">
-          <div className="success-icon">
-            ✓
+
+          <div className="queue-header-top">
+            <div className="success-icon">
+              ✓
+            </div>
+
+            <LanguageSelector />
           </div>
 
-          <h2>Procurement Status</h2>
+          <h2>{t("procurementStatus")}</h2>
 
           <p>
-            Your procurement slot has been confirmed.
+            {t("procurementConfirmed")}
           </p>
+
         </div>
 
 
-        {/* Booking Information */}
+        {/* ================= BOOKING INFORMATION ================= */}
+
         <div className="booking-info">
 
           <div className="info-row">
+
             <span className="info-label">
-              📍 Procurement Centre
+              📍 {t("procurementCentre")}
             </span>
 
             <span className="info-value">
-              {center?.name || "Procurement Center"}
+              {center?.name || t("procurementCenter")}
             </span>
+
           </div>
 
 
           <div className="info-row">
+
             <span className="info-label">
-              🕐 Time Slot
+              🕐 {t("timeSlot")}
             </span>
 
             <span className="info-value">
-              {slot || "Not available"}
+              {slot || t("notAvailable")}
             </span>
+
           </div>
 
         </div>
 
 
-        {/* Queue Section */}
+        {/* ================= QUEUE SECTION ================= */}
+
         <div className="queue-section">
 
           <p className="queue-title">
-            Your Queue Number
+            {t("yourQueueNumber")}
           </p>
 
           <div className="queue-number">
@@ -67,13 +82,14 @@ function QueueStatus() {
           </div>
 
           <p className="queue-note">
-            Please keep this number for your visit.
+            {t("queueNumberNote")}
           </p>
 
         </div>
 
 
-        {/* Waiting Information */}
+        {/* ================= WAITING INFORMATION ================= */}
+
         <div className="waiting-info">
 
           <div className="waiting-item">
@@ -83,8 +99,15 @@ function QueueStatus() {
             </span>
 
             <div>
-              <p>Farmers Ahead</p>
-              <strong>8</strong>
+
+              <p>
+                {t("farmersAhead")}
+              </p>
+
+              <strong>
+                8
+              </strong>
+
             </div>
 
           </div>
@@ -100,8 +123,15 @@ function QueueStatus() {
             </span>
 
             <div>
-              <p>Estimated Wait</p>
-              <strong>40 min</strong>
+
+              <p>
+                {t("estimatedWait")}
+              </p>
+
+              <strong>
+                40 {t("minutes")}
+              </strong>
+
             </div>
 
           </div>
@@ -109,29 +139,36 @@ function QueueStatus() {
         </div>
 
 
-        {/* Live Status */}
+        {/* ================= LIVE STATUS ================= */}
+
         <div className="live-status">
 
           <span className="live-dot"></span>
 
           <div>
-            <strong>Queue is Active</strong>
+
+            <strong>
+              {t("queueActive")}
+            </strong>
+
             <p>
-              Your position will update as farmers are served.
+              {t("queueUpdateMessage")}
             </p>
+
           </div>
 
         </div>
 
 
-        {/* Buttons */}
+        {/* ================= BUTTON ================= */}
+
         <div className="queue-actions">
 
           <button
             className="home-button"
             onClick={() => navigate("/")}
           >
-            Back to Home
+            {t("backToHome")}
           </button>
 
         </div>

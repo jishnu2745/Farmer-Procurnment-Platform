@@ -1,81 +1,81 @@
-
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 import "../style/ProcurementCenters.css";
+import LanguageSelector from "../components/LanguageSelector";
 
 function ProcurementCenters() {
-
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const centers = [
     {
       id: 1,
-      name: "Government Procurement Centre",
+      name: t("governmentProcurementCentre"),
       distance: "2.4 km",
-      waiting: 35
+      waiting: 35,
     },
     {
       id: 2,
-      name: "Agricultural Cooperative Centre",
+      name: t("agriculturalCooperativeCentre"),
       distance: "4.1 km",
-      waiting: 12
+      waiting: 12,
     },
     {
       id: 3,
-      name: "Primary Agricultural Centre",
+      name: t("primaryAgriculturalCentre"),
       distance: "6.2 km",
-      waiting: 8
-    }
+      waiting: 8,
+    },
   ];
 
   const selectCenter = (center) => {
-
     navigate("/slot-booking", {
-      state: { center }
+      state: {
+        center,
+      },
     });
-
   };
 
   return (
     <div className="centers-container">
-
       <div className="centers-content">
 
-        {/* Header */}
+        {/* ================= HEADER ================= */}
         <div className="centers-header">
-
           <div className="header-icon">
             📍
           </div>
 
           <div>
-            <h1>Procurement Centres</h1>
+            <h1>{t("procurementCentres")}</h1>
 
             <p>
-              Select a procurement centre near you.
+              {t("selectProcurementCentre")}
             </p>
           </div>
 
+          <LanguageSelector />
         </div>
 
-
-        {/* Location Status */}
+        {/* ================= LOCATION STATUS ================= */}
         <div className="location-status">
-
           <span>📍</span>
 
           <div>
-            <strong>Nearby Centres</strong>
-            <p>Showing procurement centres closest to you.</p>
-          </div>
+            <strong>
+              {t("nearbyCentres")}
+            </strong>
 
+            <p>
+              {t("nearbyCentresDescription")}
+            </p>
+          </div>
         </div>
 
-
-        {/* Centre List */}
+        {/* ================= CENTRE LIST ================= */}
         <div className="centers-list">
-
           {centers.map((center) => (
-
             <div
               className="procurement-center-card"
               key={center.id}
@@ -86,14 +86,11 @@ function ProcurementCenters() {
                 🏢
               </div>
 
-
               {/* Centre Details */}
               <div className="center-details">
-
                 <h3>
                   {center.name}
                 </h3>
-
 
                 <div className="center-info-row">
 
@@ -110,29 +107,24 @@ function ProcurementCenters() {
                         : "waiting-high"
                     }
                   >
-                    👨‍🌾 {center.waiting} waiting
+                    👨‍🌾 {center.waiting} {t("waiting")}
                   </span>
 
                 </div>
-
 
                 <button
                   className="select-center-button"
                   onClick={() => selectCenter(center)}
                 >
-                  Select Centre →
+                  {t("selectCentre")} →
                 </button>
-
               </div>
 
             </div>
-
           ))}
-
         </div>
 
       </div>
-
     </div>
   );
 }

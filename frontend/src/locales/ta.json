@@ -1,0 +1,224 @@
+{
+  "home": "முகப்பு",
+  "welcome": "விவசாயிக்கு வரவேற்பு",
+  "dashboard": "விவசாயி டாஷ்போர்டு",
+
+  "farmerDetails": "விவசாயி விவரங்கள்",
+  "bookSlot": "நேரத்தை முன்பதிவு செய்க",
+  "queueStatus": "வரிசை நிலை",
+  "procurementCenters": "கொள்முதல் மையங்கள்",
+
+  "selectCentre": "கொள்முதல் மையத்தைத் தேர்ந்தெடுக்கவும்",
+  "nearbyCentres": "அருகிலுள்ள கொள்முதல் மையங்கள்",
+  "distance": "தூரம்",
+  "farmersWaiting": "காத்திருக்கும் விவசாயிகள்",
+  "selectCentreButton": "மையத்தைத் தேர்ந்தெடுக்கவும்",
+
+  "bookProcurementSlot": "கொள்முதல் நேரத்தை முன்பதிவு செய்க",
+  "selectTime": "நேரத்தைத் தேர்ந்தெடுக்கவும்",
+  "confirmSlot": "நேரத்தை உறுதிப்படுத்தவும்",
+
+  "slotConfirmed": "நேரம் உறுதிசெய்யப்பட்டது",
+  "yourQueueNumber": "உங்கள் வரிசை எண்",
+  "farmersAhead": "உங்களுக்கு முன்னால் உள்ள விவசாயிகள்",
+  "estimatedWaitingTime": "மதிப்பிடப்பட்ட காத்திருப்பு நேரம்",
+
+  "personalDetails": "தனிப்பட்ட விவரங்கள்",
+  "landDetails": "நில விவரங்கள்",
+  "bankDetails": "வங்கி விவரங்கள்",
+
+  "name": "பெயர்",
+  "fatherName": "தந்தையின் பெயர்",
+  "village": "கிராமம்",
+  "district": "மாவட்டம்",
+  "state": "மாநிலம்",
+
+  "surveyNumber": "சர்வே எண்",
+  "landArea": "நிலப்பரப்பு",
+  "crop": "பயிர்",
+
+  "bankName": "வங்கியின் பெயர்",
+  "accountNumber": "கணக்கு எண்",
+  "ifscCode": "IFSC குறியீடு",
+
+  "saveDetails": "விவரங்களைச் சேமிக்கவும்",
+  "language": "மொழி",
+
+  "procurementPlatform": "கொள்முதல் தளம்",
+  "language": "தமிழ்",
+
+  "sellProduce": "உங்கள் விளைபொருட்களை விற்கவும்.",
+  "skipWaiting": "காத்திருப்பதைத் தவிர்க்கவும்.",
+  "welcomeDescription": "உங்கள் பண்ணையை பதிவு செய்து, கொள்முதல் நேரத்தை முன்பதிவு செய்து, உங்கள் விளைபொருட்கள் மற்றும் பணப்பரிவர்த்தனைகளை ஒரே இடத்தில் கண்காணிக்கவும்.",
+
+  "bookSlot": "நேரத்தை முன்பதிவு செய்க",
+  "bookSlotDescription": "உங்களுக்கு வசதியான கொள்முதல் நேரத்தைத் தேர்ந்தெடுக்கவும்.",
+
+  "lessWaiting": "குறைந்த காத்திருப்பு",
+  "lessWaitingDescription": "உங்கள் வரிசை நிலையை முன்கூட்டியே அறிந்து கொள்ளுங்கள்.",
+
+  "trackPayments": "பணப்பரிவர்த்தனைகளை கண்காணிக்கவும்",
+  "trackPaymentsDescription": "உங்கள் கொள்முதல் மற்றும் பணப்பரிவர்த்தனை நிலையை சரிபார்க்கவும்.",
+
+  "farmerLogin": "விவசாயி உள்நுழைவு",
+  "loginDescription": "தொடர உங்கள் பதிவு செய்யப்பட்ட மொபைல் எண்ணை உள்ளிடவும்.",
+
+  "mobileNumber": "மொபைல் எண்",
+  "mobilePlaceholder": "10 இலக்க எண்ணை உள்ளிடவும்",
+  "otpDescription": "இந்த எண்ணிற்கு ஒரு முறை பயன்படுத்தும் கடவுச்சொல்லை அனுப்புவோம்.",
+
+  "sendOTP": "OTP அனுப்பவும்",
+  "secureInformation": "உங்கள் தகவல்கள் பாதுகாப்பாகவும் பாதுகாக்கப்பட்டும் உள்ளன.",
+
+  "newFarmer": "புதிய விவசாயியா?",
+  "registerFarmer": "விவசாயியாக பதிவு செய்யவும்",
+
+  "copyright": "© 2026 FarmerConnect",
+  "farmerProcurementServices": "விவசாயி கொள்முதல் சேவைகள்",
+
+  "invalidMobile": "சரியான 10 இலக்க மொபைல் எண்ணை உள்ளிடவும்",
+  "verifyMobile": "உங்கள் மொபைல் எண்ணை சரிபார்க்கவும்",
+"otpSentTo": "6 இலக்க OTP இந்த எண்ணிற்கு அனுப்பப்பட்டுள்ளது",
+"enterOTP": "OTP உள்ளிடவும்",
+"completeOTP": "முழுமையான 6 இலக்க OTP-ஐ உள்ளிடவும்.",
+"incorrectOTP": "தவறான OTP. மீண்டும் முயற்சிக்கவும்.",
+"verifyContinue": "சரிபார்த்து தொடரவும்",
+"didntReceiveOTP": "OTP கிடைக்கவில்லையா?",
+"resendOTP": "OTP மீண்டும் அனுப்பவும்",
+"otpSent": "புதிய OTP உங்கள் மொபைல் எண்ணிற்கு அனுப்பப்பட்டுள்ளது.",
+"changeMobile": "மொபைல் எண்ணை மாற்றவும்",
+"mobileSecurity": "உங்கள் மொபைல் எண் சரிபார்ப்பிற்காக பாதுகாப்பாக பயன்படுத்தப்படுகிறது.",
+"welcomeBack": "மீண்டும் வரவேற்கிறோம்",
+"dashboardDescription": "உங்கள் விவரங்களை நிர்வகிக்கவும், கொள்முதல் நேரங்களை முன்பதிவு செய்யவும், உங்கள் வரிசையை எளிதாகக் கண்காணிக்கவும்.",
+
+"farmerDetailsDescription": "உங்கள் தனிப்பட்ட மற்றும் நில விவரங்களைப் பார்க்கவும் நிர்வகிக்கவும்.",
+"bookSlotHomeDescription": "கொள்முதல் மையத்தைத் தேர்ந்தெடுத்து உங்கள் நேரத்தை முன்பதிவு செய்யவும்.",
+"queueStatusDescription": "உங்கள் வரிசை நிலை மற்றும் மதிப்பிடப்பட்ட காத்திருப்பு நேரத்தைப் பார்க்கவும்.",
+"centersDescription": "அருகிலுள்ள கொள்முதல் மையங்கள் மற்றும் அவற்றின் கிடைக்கும் நிலையைப் பார்க்கவும்.",
+
+"currentBooking": "தற்போதைய முன்பதிவு",
+"noActiveBooking": "செயலில் உள்ள முன்பதிவு இல்லை",
+"noBookingDescription": "நீங்கள் இன்னும் கொள்முதல் நேரத்தை முன்பதிவு செய்யவில்லை.",
+
+"home": "முகப்பு",
+"booking": "முன்பதிவு",
+"queue": "வரிசை",
+"centers": "மையங்கள்",
+
+
+"farmerRegistration": "விவசாயி பதிவு",
+  "registrationSubtitle": "பதிவை முடிக்க உங்கள் விவரங்களை உள்ளிடவும்.",
+
+  "personalDetails": "தனிப்பட்ட விவரங்கள்",
+  "personalDetailsDescription": "உங்கள் அடிப்படை தகவல்களை உள்ளிடவும்",
+
+  "farmerName": "விவசாயி பெயர்",
+  "farmerNamePlaceholder": "விவசாயியின் பெயரை உள்ளிடவும்",
+
+  "fatherHusbandName": "தந்தை / கணவர் பெயர்",
+  "fatherHusbandPlaceholder": "தந்தை / கணவர் பெயரை உள்ளிடவும்",
+
+  "dateOfBirth": "பிறந்த தேதி",
+
+  "village": "கிராமம்",
+  "villagePlaceholder": "கிராமத்தை உள்ளிடவும்",
+
+  "district": "மாவட்டம்",
+  "districtPlaceholder": "மாவட்டத்தை உள்ளிடவும்",
+
+  "state": "மாநிலம்",
+  "statePlaceholder": "மாநிலத்தை உள்ளிடவும்",
+
+  "landDetails": "நில விவரங்கள்",
+  "landDetailsDescription": "உங்கள் விவசாய நில விவரங்களை உள்ளிடவும்",
+
+  "surveyNumber": "சர்வே எண்",
+  "surveyNumberPlaceholder": "சர்வே எண்ணை உள்ளிடவும்",
+
+  "subDivisionNumber": "உட்பிரிவு எண்",
+  "subDivisionPlaceholder": "எ.கா: 12/1A",
+
+  "landArea": "நிலப்பரப்பு",
+  "landAreaPlaceholder": "நிலப்பரப்பை உள்ளிடவும்",
+
+  "areaUnit": "பரப்பளவு அலகு",
+  "acres": "ஏக்கர்",
+  "hectares": "ஹெக்டேர்",
+
+  "ownershipType": "உரிமை வகை",
+  "selectOwnership": "உரிமையைத் தேர்ந்தெடுக்கவும்",
+  "ownLand": "சொந்த நிலம்",
+  "leasedLand": "குத்தகை நிலம்",
+  "jointOwnership": "கூட்டு உரிமை",
+
+  "currentCrop": "தற்போதைய பயிர்",
+  "cropPlaceholder": "எ.கா: நெல்",
+
+  "bankDetails": "வங்கி விவரங்கள்",
+  "bankDetailsDescription": "கொள்முதல் பணம் பெற பயன்படுத்தப்படும் கணக்கு விவரங்களை உள்ளிடவும்",
+
+  "accountHolderName": "கணக்கு வைத்திருப்பவரின் பெயர்",
+  "accountHolderPlaceholder": "கணக்கு வைத்திருப்பவரின் பெயரை உள்ளிடவும்",
+
+  "bankName": "வங்கியின் பெயர்",
+  "bankNamePlaceholder": "வங்கியின் பெயரை உள்ளிடவும்",
+
+  "branchName": "கிளை பெயர்",
+  "branchNamePlaceholder": "கிளை பெயரை உள்ளிடவும்",
+
+  "ifscCode": "IFSC குறியீடு",
+  "ifscPlaceholder": "எ.கா: SBIN0001234",
+
+  "accountNumber": "கணக்கு எண்",
+  "accountNumberPlaceholder": "கணக்கு எண்ணை உள்ளிடவும்",
+
+  "confirmAccountNumber": "கணக்கு எண்ணை உறுதிப்படுத்தவும்",
+  "confirmAccountPlaceholder": "கணக்கு எண்ணை மீண்டும் உள்ளிடவும்",
+
+  "back": "பின்செல்",
+  "completeRegistration": "பதிவை முடிக்கவும்",
+
+  "fillRequiredFields": "தேவையான அனைத்து விவரங்களையும் நிரப்பவும்",
+  "accountNumbersMismatch": "வங்கி கணக்கு எண்கள் பொருந்தவில்லை",
+
+  
+  "bookProcurementSlot": "கொள்முதல் நேரத்தை முன்பதிவு செய்யவும்",
+  "bookProcurementSlotDescription": "கொள்முதல் மையத்திற்கு வருவதற்கு உங்களுக்கு வசதியான நேரத்தைத் தேர்ந்தெடுக்கவும்.",
+
+  "procurementCenter": "கொள்முதல் மையம்",
+  "distance": "தூரம்",
+  "notAvailable": "கிடைக்கவில்லை",
+
+  "selectTimeSlot": "நேரத்தைத் தேர்ந்தெடுக்கவும்",
+  "selectTimeSlotDescription": "கிடைக்கக்கூடிய ஒரு நேரத்தைத் தேர்ந்தெடுக்கவும்.",
+
+  "confirmSlot": "நேரத்தை உறுதிப்படுத்தவும்",
+  "goBack": "பின்செல்",
+
+  "selectSlotError": "தயவுசெய்து ஒரு நேரத்தைத் தேர்ந்தெடுக்கவும்",
+
+  
+  "procurementStatus": "கொள்முதல் நிலை",
+  "procurementConfirmed": "உங்கள் கொள்முதல் நேரம் உறுதிப்படுத்தப்பட்டுள்ளது.",
+
+  "procurementCentre": "கொள்முதல் மையம்",
+  "procurementCenter": "கொள்முதல் மையம்",
+  "timeSlot": "நேரம்",
+  "notAvailable": "கிடைக்கவில்லை",
+
+  "yourQueueNumber": "உங்கள் வரிசை எண்",
+  "queueNumberNote": "வருகையின் போது இந்த எண்ணை வைத்திருக்கவும்.",
+
+  "farmersAhead": "முன்னால் உள்ள விவசாயிகள்",
+  "estimatedWait": "மதிப்பிடப்பட்ட காத்திருப்பு",
+  "minutes": "நிமிடம்",
+
+  "queueActive": "வரிசை செயலில் உள்ளது",
+  "queueUpdateMessage": "விவசாயிகள் சேவை பெறும்போது உங்கள் வரிசை நிலை புதுப்பிக்கப்படும்.",
+
+  "backToHome": "முகப்புக்குத் திரும்பு",
+
+  "procurementCentres": "கொள்முதல் மையங்கள்", "selectProcurementCentre": "உங்களுக்கு அருகிலுள்ள கொள்முதல் மையத்தைத் தேர்ந்தெடுக்கவும்.", "nearbyCentres": "அருகிலுள்ள மையங்கள்", "nearbyCentresDescription": "உங்களுக்கு அருகிலுள்ள கொள்முதல் மையங்கள் காட்டப்படுகின்றன.", "governmentProcurementCentre": "அரசு கொள்முதல் மையம்", "agriculturalCooperativeCentre": "விவசாய கூட்டுறவு மையம்", "primaryAgriculturalCentre": "முதன்மை வேளாண்மை மையம்", "waiting": "காத்திருக்கின்றனர்", "selectCentre": "மையத்தைத் தேர்ந்தெடுக்கவும்"
+
+
+}

@@ -1,0 +1,223 @@
+{
+  "home": "होम",
+  "welcome": "किसान का स्वागत है",
+  "dashboard": "किसान डैशबोर्ड",
+
+  "farmerDetails": "किसान विवरण",
+  "bookSlot": "स्लॉट बुक करें",
+  "queueStatus": "कतार की स्थिति",
+  "procurementCenters": "खरीद केंद्र",
+
+  "selectCentre": "खरीद केंद्र चुनें",
+  "nearbyCentres": "नजदीकी खरीद केंद्र",
+  "distance": "दूरी",
+  "farmersWaiting": "प्रतीक्षा कर रहे किसान",
+  "selectCentreButton": "केंद्र चुनें",
+
+  "bookProcurementSlot": "खरीद स्लॉट बुक करें",
+  "selectTime": "समय चुनें",
+  "confirmSlot": "स्लॉट की पुष्टि करें",
+
+  "slotConfirmed": "स्लॉट की पुष्टि हो गई",
+  "yourQueueNumber": "आपका कतार नंबर",
+  "farmersAhead": "आपसे आगे किसान",
+  "estimatedWaitingTime": "अनुमानित प्रतीक्षा समय",
+
+  "personalDetails": "व्यक्तिगत विवरण",
+  "landDetails": "भूमि विवरण",
+  "bankDetails": "बैंक विवरण",
+
+  "name": "नाम",
+  "fatherName": "पिता का नाम",
+  "village": "गांव",
+  "district": "जिला",
+  "state": "राज्य",
+
+  "surveyNumber": "सर्वे नंबर",
+  "landArea": "भूमि क्षेत्र",
+  "crop": "फसल",
+
+  "bankName": "बैंक का नाम",
+  "accountNumber": "खाता नंबर",
+  "ifscCode": "IFSC कोड",
+
+  "saveDetails": "विवरण सहेजें",
+  "language": "भाषा",
+
+   "procurementPlatform": "खरीद प्लेटफॉर्म",
+  "language": "हिन्दी",
+
+  "sellProduce": "अपनी उपज बेचें।",
+  "skipWaiting": "प्रतीक्षा से बचें।",
+  "welcomeDescription": "अपने खेत का पंजीकरण करें, खरीद स्लॉट बुक करें और अपनी उपज तथा भुगतान को एक ही स्थान पर ट्रैक करें।",
+
+  "bookSlot": "स्लॉट बुक करें",
+  "bookSlotDescription": "अपनी सुविधानुसार खरीद का समय चुनें।",
+
+  "lessWaiting": "कम प्रतीक्षा",
+  "lessWaitingDescription": "अपनी कतार की स्थिति पहले से जानें।",
+
+  "trackPayments": "भुगतान ट्रैक करें",
+  "trackPaymentsDescription": "अपनी खरीद और भुगतान की स्थिति देखें।",
+
+  "farmerLogin": "किसान लॉगिन",
+  "loginDescription": "जारी रखने के लिए अपना पंजीकृत मोबाइल नंबर दर्ज करें।",
+
+  "mobileNumber": "मोबाइल नंबर",
+  "mobilePlaceholder": "10 अंकों का नंबर दर्ज करें",
+  "otpDescription": "हम इस नंबर पर एक बार उपयोग होने वाला पासवर्ड भेजेंगे।",
+
+  "sendOTP": "OTP भेजें",
+  "secureInformation": "आपकी जानकारी सुरक्षित और संरक्षित है।",
+
+  "newFarmer": "नए किसान हैं?",
+  "registerFarmer": "किसान के रूप में पंजीकरण करें",
+
+  "copyright": "© 2026 FarmerConnect",
+  "farmerProcurementServices": "किसान खरीद सेवाएं",
+
+  "invalidMobile": "कृपया एक मान्य 10 अंकों का मोबाइल नंबर दर्ज करें",
+   "verifyMobile": "अपने मोबाइल नंबर की पुष्टि करें",
+"otpSentTo": "6 अंकों का OTP इस नंबर पर भेजा गया है",
+"enterOTP": "OTP दर्ज करें",
+"completeOTP": "कृपया पूरा 6 अंकों का OTP दर्ज करें।",
+"incorrectOTP": "गलत OTP। कृपया पुनः प्रयास करें।",
+"verifyContinue": "सत्यापित करें और जारी रखें",
+"didntReceiveOTP": "OTP प्राप्त नहीं हुआ?",
+"resendOTP": "OTP दोबारा भेजें",
+"otpSent": "नया OTP आपके मोबाइल नंबर पर भेज दिया गया है।",
+"changeMobile": "मोबाइल नंबर बदलें",
+"mobileSecurity": "आपके मोबाइल नंबर का उपयोग सत्यापन के लिए सुरक्षित रूप से किया जाता है।",
+"welcomeBack": "वापसी पर स्वागत है",
+"dashboardDescription": "अपने विवरण प्रबंधित करें, खरीद स्लॉट बुक करें और अपनी कतार को आसानी से ट्रैक करें।",
+
+"farmerDetailsDescription": "अपने व्यक्तिगत और भूमि विवरण देखें और प्रबंधित करें।",
+"bookSlotHomeDescription": "खरीद केंद्र चुनें और अपना स्लॉट बुक करें।",
+"queueStatusDescription": "अपनी स्थिति और अनुमानित प्रतीक्षा समय देखें।",
+"centersDescription": "नजदीकी खरीद केंद्र और उनकी उपलब्धता देखें।",
+
+"currentBooking": "वर्तमान बुकिंग",
+"noActiveBooking": "कोई सक्रिय बुकिंग नहीं",
+"noBookingDescription": "आपने अभी तक खरीद स्लॉट बुक नहीं किया है।",
+
+"home": "होम",
+"booking": "बुकिंग",
+"queue": "कतार",
+"centers": "केंद्र",
+
+"farmerRegistration": "किसान पंजीकरण",
+  "registrationSubtitle": "पंजीकरण पूरा करने के लिए अपना विवरण दर्ज करें।",
+
+  "personalDetails": "व्यक्तिगत विवरण",
+  "personalDetailsDescription": "अपनी मूल जानकारी दर्ज करें",
+
+  "farmerName": "किसान का नाम",
+  "farmerNamePlaceholder": "किसान का नाम दर्ज करें",
+
+  "fatherHusbandName": "पिता / पति का नाम",
+  "fatherHusbandPlaceholder": "पिता / पति का नाम दर्ज करें",
+
+  "dateOfBirth": "जन्म तिथि",
+
+  "village": "गांव",
+  "villagePlaceholder": "गांव का नाम दर्ज करें",
+
+  "district": "जिला",
+  "districtPlaceholder": "जिले का नाम दर्ज करें",
+
+  "state": "राज्य",
+  "statePlaceholder": "राज्य का नाम दर्ज करें",
+
+  "landDetails": "भूमि विवरण",
+  "landDetailsDescription": "अपनी कृषि भूमि की जानकारी दर्ज करें",
+
+  "surveyNumber": "सर्वे नंबर",
+  "surveyNumberPlaceholder": "सर्वे नंबर दर्ज करें",
+
+  "subDivisionNumber": "उप-विभाजन नंबर",
+  "subDivisionPlaceholder": "उदा: 12/1A",
+
+  "landArea": "भूमि क्षेत्रफल",
+  "landAreaPlaceholder": "भूमि क्षेत्रफल दर्ज करें",
+
+  "areaUnit": "क्षेत्रफल इकाई",
+  "acres": "एकड़",
+  "hectares": "हेक्टेयर",
+
+  "ownershipType": "स्वामित्व का प्रकार",
+  "selectOwnership": "स्वामित्व चुनें",
+  "ownLand": "स्वयं की भूमि",
+  "leasedLand": "पट्टे की भूमि",
+  "jointOwnership": "संयुक्त स्वामित्व",
+
+  "currentCrop": "वर्तमान फसल",
+  "cropPlaceholder": "उदा: धान",
+
+  "bankDetails": "बैंक विवरण",
+  "bankDetailsDescription": "खरीद भुगतान के लिए उपयोग किए जाने वाले खाते की जानकारी दर्ज करें",
+
+  "accountHolderName": "खाता धारक का नाम",
+  "accountHolderPlaceholder": "खाता धारक का नाम दर्ज करें",
+
+  "bankName": "बैंक का नाम",
+  "bankNamePlaceholder": "बैंक का नाम दर्ज करें",
+
+  "branchName": "शाखा का नाम",
+  "branchNamePlaceholder": "शाखा का नाम दर्ज करें",
+
+  "ifscCode": "IFSC कोड",
+  "ifscPlaceholder": "उदा: SBIN0001234",
+
+  "accountNumber": "खाता संख्या",
+  "accountNumberPlaceholder": "खाता संख्या दर्ज करें",
+
+  "confirmAccountNumber": "खाता संख्या की पुष्टि करें",
+  "confirmAccountPlaceholder": "खाता संख्या दोबारा दर्ज करें",
+
+  "back": "वापस",
+  "completeRegistration": "पंजीकरण पूरा करें",
+
+  "fillRequiredFields": "कृपया सभी आवश्यक जानकारी भरें",
+  "accountNumbersMismatch": "बैंक खाता संख्या मेल नहीं खाती",
+
+  
+  "bookProcurementSlot": "खरीद स्लॉट बुक करें",
+  "bookProcurementSlotDescription": "खरीद केंद्र पर जाने के लिए सुविधाजनक समय चुनें।",
+
+  "procurementCenter": "खरीद केंद्र",
+  "distance": "दूरी",
+  "notAvailable": "उपलब्ध नहीं",
+
+  "selectTimeSlot": "समय स्लॉट चुनें",
+  "selectTimeSlotDescription": "एक उपलब्ध समय स्लॉट चुनें।",
+
+  "confirmSlot": "स्लॉट की पुष्टि करें",
+  "goBack": "वापस जाएं",
+
+  "selectSlotError": "कृपया एक स्लॉट चुनें",
+
+  
+  "procurementStatus": "खरीद स्थिति",
+  "procurementConfirmed": "आपका खरीद स्लॉट सफलतापूर्वक पुष्टि हो गया है।",
+
+  "procurementCentre": "खरीद केंद्र",
+  "procurementCenter": "खरीद केंद्र",
+  "timeSlot": "समय स्लॉट",
+  "notAvailable": "उपलब्ध नहीं",
+
+  "yourQueueNumber": "आपका कतार नंबर",
+  "queueNumberNote": "कृपया अपनी यात्रा के लिए यह नंबर संभालकर रखें।",
+
+  "farmersAhead": "आगे किसान",
+  "estimatedWait": "अनुमानित प्रतीक्षा",
+  "minutes": "मिनट",
+
+  "queueActive": "कतार सक्रिय है",
+  "queueUpdateMessage": "किसानों को सेवा मिलने के साथ आपकी स्थिति अपडेट होती रहेगी।",
+
+  "backToHome": "होम पर वापस जाएं",
+  "procurementCentres": "खरीद केंद्र", "selectProcurementCentre": "अपने पास का खरीद केंद्र चुनें।", "nearbyCentres": "नजदीकी केंद्र", "nearbyCentresDescription": "आपके सबसे नजदीक के खरीद केंद्र दिखाए जा रहे हैं।", "governmentProcurementCentre": "सरकारी खरीद केंद्र", "agriculturalCooperativeCentre": "कृषि सहकारी केंद्र", "primaryAgriculturalCentre": "प्राथमिक कृषि केंद्र", "waiting": "प्रतीक्षा में", "selectCentre": "केंद्र चुनें"
+
+
+
+}

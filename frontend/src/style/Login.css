@@ -531,5 +531,26 @@ body {
   .login-footer {
     display: none;
   }
+  .language {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.language select {
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2f5d3a;
+  cursor: pointer;
+  outline: none;
+}
+
+.language select option {
+  color: #222;
+  background: white;
+}
+
 }
 

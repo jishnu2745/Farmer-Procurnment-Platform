@@ -1,7 +1,9 @@
-
 import { useState, useRef } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 import "../style/OTPVerification.css";
+import LanguageSelector from "../components/LanguageSelector";
 
 function OTPVerification() {
   const [otp, setOtp] = useState("");
@@ -9,6 +11,7 @@ function OTPVerification() {
 
   const location = useLocation();
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const inputRef = useRef(null);
 
@@ -24,7 +27,7 @@ function OTPVerification() {
     setError("");
 
     if (otp.length !== 6) {
-      setError("Please enter the complete 6-digit OTP.");
+      setError(t("completeOTP"));
       return;
     }
 
@@ -33,7 +36,7 @@ function OTPVerification() {
     if (otp === "123456") {
       navigate("/home");
     } else {
-      setError("Incorrect OTP. Please try again.");
+      setError(t("incorrectOTP"));
     }
   };
 
@@ -51,32 +54,38 @@ function OTPVerification() {
     setOtp("");
     setError("");
 
-    alert("A new OTP has been sent to your mobile number.");
+    alert(t("otpSent"));
   };
 
   return (
     <div className="login-page">
 
-      {/* Header */}
+      {/* ================= HEADER ================= */}
       <header className="login-header">
 
         <div className="logo">
-          <span className="logo-icon">🌾</span>
+
+          <span className="logo-icon">
+            🌾
+          </span>
 
           <div>
-            <h2>FarmerConnect</h2>
-            <span>Procurement Platform</span>
+            <h2>SmartProcure</h2>
+
+            <span>
+              {t("procurementPlatform")}
+            </span>
           </div>
+
         </div>
 
-        <div className="language">
-          🌐 English ▾
-        </div>
+        {/* Language Selector */}
+        <LanguageSelector />
 
       </header>
 
 
-      {/* OTP Content */}
+      {/* ================= OTP CONTENT ================= */}
       <main className="otp-main">
 
         <div className="otp-card">
@@ -90,10 +99,12 @@ function OTPVerification() {
           {/* Heading */}
           <div className="otp-header">
 
-            <h1>Verify your mobile number</h1>
+            <h1>
+              {t("verifyMobile")}
+            </h1>
 
             <p>
-              We have sent a 6-digit OTP to
+              {t("otpSentTo")}
             </p>
 
             <strong>
@@ -103,11 +114,11 @@ function OTPVerification() {
           </div>
 
 
-          {/* OTP Input */}
+          {/* ================= OTP INPUT ================= */}
           <div className="otp-form">
 
             <label htmlFor="otp">
-              Enter OTP
+              {t("enterOTP")}
             </label>
 
             <input
@@ -120,7 +131,11 @@ function OTPVerification() {
               value={otp}
               onChange={handleOTPChange}
               maxLength="6"
-              className={error ? "otp-input error" : "otp-input"}
+              className={
+                error
+                  ? "otp-input error"
+                  : "otp-input"
+              }
               autoFocus
             />
 
@@ -133,43 +148,49 @@ function OTPVerification() {
           </div>
 
 
-          {/* Verify Button */}
+          {/* ================= VERIFY BUTTON ================= */}
           <button
             className="otp-button"
             onClick={verifyOTP}
           >
-            Verify & Continue
-            <span>→</span>
+            {t("verifyContinue")}
+
+            <span>
+              →
+            </span>
+
           </button>
 
 
-          {/* Resend */}
+          {/* ================= RESEND OTP ================= */}
           <div className="resend-section">
 
-            <span>Didn't receive the OTP?</span>
+            <span>
+              {t("didntReceiveOTP")}
+            </span>
 
             <button
               className="resend-button"
               onClick={resendOTP}
             >
-              Resend OTP
+              {t("resendOTP")}
             </button>
 
           </div>
 
 
-          {/* Change Number */}
+          {/* ================= CHANGE NUMBER ================= */}
           <button
             className="change-number"
             onClick={() => navigate("/")}
           >
-            ← Change mobile number
+            ← {t("changeMobile")}
           </button>
 
 
-          {/* Security */}
+          {/* ================= SECURITY ================= */}
           <div className="security-note">
-            🔒 Your mobile number is used securely for verification.
+            🔒 {t("mobileSecurity")}
           </div>
 
         </div>
@@ -177,14 +198,20 @@ function OTPVerification() {
       </main>
 
 
-      {/* Footer */}
+      {/* ================= FOOTER ================= */}
       <footer className="login-footer">
 
-        <span>© 2026 FarmerConnect</span>
+        <span>
+          {t("copyright")}
+        </span>
 
-        <span>•</span>
+        <span>
+          •
+        </span>
 
-        <span>Farmer Procurement Services</span>
+        <span>
+          {t("farmerProcurementServices")}
+        </span>
 
       </footer>
 

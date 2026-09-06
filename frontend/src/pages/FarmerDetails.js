@@ -1,10 +1,13 @@
-
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 import "../style/FarmerDetails.css";
+import LanguageSelector from "../components/LanguageSelector";
 
 function FarmerDetails() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const [form, setForm] = useState({
     // Personal Details
@@ -52,15 +55,16 @@ function FarmerDetails() {
       !form.accountHolderName ||
       !form.bankName ||
       !form.accountNumber ||
+      !form.confirmAccountNumber ||
       !form.ifscCode
     ) {
-      alert("Please fill all required fields");
+      alert(t("fillRequiredFields"));
       return;
     }
 
     // Check account numbers
     if (form.accountNumber !== form.confirmAccountNumber) {
-      alert("Bank account numbers do not match");
+      alert(t("accountNumbersMismatch"));
       return;
     }
 
@@ -75,11 +79,21 @@ function FarmerDetails() {
 
       <div className="farmer-card">
 
-        <h1>Farmer Registration</h1>
+        {/* ================= HEADER ================= */}
 
-        <p className="subtitle">
-          Please enter your details to complete registration.
-        </p>
+        <div className="farmer-header">
+
+          <div>
+            <h1>{t("farmerRegistration")}</h1>
+
+            <p className="subtitle">
+              {t("registrationSubtitle")}
+            </p>
+          </div>
+
+          <LanguageSelector />
+
+        </div>
 
 
         <form onSubmit={handleSubmit}>
@@ -89,46 +103,67 @@ function FarmerDetails() {
           <div className="form-section">
 
             <div className="section-title">
+
               <span>👨‍🌾</span>
+
               <div>
-                <h2>Personal Details</h2>
-                <p>Enter your basic information</p>
+                <h2>{t("personalDetails")}</h2>
+
+                <p>
+                  {t("personalDetailsDescription")}
+                </p>
               </div>
+
             </div>
 
 
             <div className="form-grid">
 
+              {/* Farmer Name */}
+
               <div className="form-group">
+
                 <label>
-                  Farmer Name <span>*</span>
+                  {t("farmerName")} <span>*</span>
                 </label>
 
                 <input
                   type="text"
                   name="name"
-                  placeholder="Enter farmer name"
+                  placeholder={t("farmerNamePlaceholder")}
                   value={form.name}
                   onChange={handleChange}
                 />
+
               </div>
 
 
+              {/* Father / Husband Name */}
+
               <div className="form-group">
-                <label>Father / Husband Name</label>
+
+                <label>
+                  {t("fatherHusbandName")}
+                </label>
 
                 <input
                   type="text"
                   name="fatherName"
-                  placeholder="Enter father / husband name"
+                  placeholder={t("fatherHusbandPlaceholder")}
                   value={form.fatherName}
                   onChange={handleChange}
                 />
+
               </div>
 
 
+              {/* Date of Birth */}
+
               <div className="form-group">
-                <label>Date of Birth</label>
+
+                <label>
+                  {t("dateOfBirth")}
+                </label>
 
                 <input
                   type="date"
@@ -136,49 +171,64 @@ function FarmerDetails() {
                   value={form.dateOfBirth}
                   onChange={handleChange}
                 />
+
               </div>
 
 
+              {/* Village */}
+
               <div className="form-group">
+
                 <label>
-                  Village <span>*</span>
+                  {t("village")} <span>*</span>
                 </label>
 
                 <input
                   type="text"
                   name="village"
-                  placeholder="Enter village"
+                  placeholder={t("villagePlaceholder")}
                   value={form.village}
                   onChange={handleChange}
                 />
+
               </div>
 
 
+              {/* District */}
+
               <div className="form-group">
+
                 <label>
-                  District <span>*</span>
+                  {t("district")} <span>*</span>
                 </label>
 
                 <input
                   type="text"
                   name="district"
-                  placeholder="Enter district"
+                  placeholder={t("districtPlaceholder")}
                   value={form.district}
                   onChange={handleChange}
                 />
+
               </div>
 
 
+              {/* State */}
+
               <div className="form-group">
-                <label>State</label>
+
+                <label>
+                  {t("state")}
+                </label>
 
                 <input
                   type="text"
                   name="state"
-                  placeholder="Enter state"
+                  placeholder={t("statePlaceholder")}
                   value={form.state}
                   onChange={handleChange}
                 />
+
               </div>
 
             </div>
@@ -191,99 +241,159 @@ function FarmerDetails() {
           <div className="form-section">
 
             <div className="section-title">
+
               <span>🌱</span>
+
               <div>
-                <h2>Land Details</h2>
-                <p>Enter your agricultural land information</p>
+
+                <h2>{t("landDetails")}</h2>
+
+                <p>
+                  {t("landDetailsDescription")}
+                </p>
+
               </div>
+
             </div>
 
 
             <div className="form-grid">
 
+              {/* Survey Number */}
+
               <div className="form-group">
+
                 <label>
-                  Survey Number <span>*</span>
+                  {t("surveyNumber")} <span>*</span>
                 </label>
 
                 <input
                   type="text"
                   name="surveyNumber"
-                  placeholder="Enter survey number"
+                  placeholder={t("surveyNumberPlaceholder")}
                   value={form.surveyNumber}
                   onChange={handleChange}
                 />
+
               </div>
 
 
+              {/* Sub Division */}
+
               <div className="form-group">
-                <label>Sub-Division Number</label>
+
+                <label>
+                  {t("subDivisionNumber")}
+                </label>
 
                 <input
                   type="text"
                   name="subDivisionNumber"
-                  placeholder="Eg: 12/1A"
+                  placeholder={t("subDivisionPlaceholder")}
                   value={form.subDivisionNumber}
                   onChange={handleChange}
                 />
+
               </div>
 
 
+              {/* Land Area */}
+
               <div className="form-group">
+
                 <label>
-                  Land Area <span>*</span>
+                  {t("landArea")} <span>*</span>
                 </label>
 
                 <input
                   type="number"
                   name="landArea"
-                  placeholder="Enter land area"
+                  placeholder={t("landAreaPlaceholder")}
                   value={form.landArea}
                   onChange={handleChange}
                 />
+
               </div>
 
 
+              {/* Area Unit */}
+
               <div className="form-group">
-                <label>Area Unit</label>
+
+                <label>
+                  {t("areaUnit")}
+                </label>
 
                 <select
                   name="landUnit"
                   value={form.landUnit}
                   onChange={handleChange}
                 >
-                  <option value="Acres">Acres</option>
-                  <option value="Hectares">Hectares</option>
+
+                  <option value="Acres">
+                    {t("acres")}
+                  </option>
+
+                  <option value="Hectares">
+                    {t("hectares")}
+                  </option>
+
                 </select>
+
               </div>
 
 
+              {/* Ownership Type */}
+
               <div className="form-group">
-                <label>Ownership Type</label>
+
+                <label>
+                  {t("ownershipType")}
+                </label>
 
                 <select
                   name="ownershipType"
                   value={form.ownershipType}
                   onChange={handleChange}
                 >
-                  <option value="">Select ownership</option>
-                  <option value="Own">Own Land</option>
-                  <option value="Lease">Leased Land</option>
-                  <option value="Joint">Joint Ownership</option>
+
+                  <option value="">
+                    {t("selectOwnership")}
+                  </option>
+
+                  <option value="Own">
+                    {t("ownLand")}
+                  </option>
+
+                  <option value="Lease">
+                    {t("leasedLand")}
+                  </option>
+
+                  <option value="Joint">
+                    {t("jointOwnership")}
+                  </option>
+
                 </select>
+
               </div>
 
 
+              {/* Current Crop */}
+
               <div className="form-group">
-                <label>Current Crop</label>
+
+                <label>
+                  {t("currentCrop")}
+                </label>
 
                 <input
                   type="text"
                   name="crop"
-                  placeholder="Eg: Paddy"
+                  placeholder={t("cropPlaceholder")}
                   value={form.crop}
                   onChange={handleChange}
                 />
+
               </div>
 
             </div>
@@ -296,101 +406,135 @@ function FarmerDetails() {
           <div className="form-section">
 
             <div className="section-title">
+
               <span>🏦</span>
+
               <div>
-                <h2>Bank Details</h2>
-                <p>Enter the account used for procurement payments</p>
+
+                <h2>{t("bankDetails")}</h2>
+
+                <p>
+                  {t("bankDetailsDescription")}
+                </p>
+
               </div>
+
             </div>
 
 
             <div className="form-grid">
 
+              {/* Account Holder Name */}
+
               <div className="form-group">
+
                 <label>
-                  Account Holder Name <span>*</span>
+                  {t("accountHolderName")} <span>*</span>
                 </label>
 
                 <input
                   type="text"
                   name="accountHolderName"
-                  placeholder="Enter account holder name"
+                  placeholder={t("accountHolderPlaceholder")}
                   value={form.accountHolderName}
                   onChange={handleChange}
                 />
+
               </div>
 
 
+              {/* Bank Name */}
+
               <div className="form-group">
+
                 <label>
-                  Bank Name <span>*</span>
+                  {t("bankName")} <span>*</span>
                 </label>
 
                 <input
                   type="text"
                   name="bankName"
-                  placeholder="Enter bank name"
+                  placeholder={t("bankNamePlaceholder")}
                   value={form.bankName}
                   onChange={handleChange}
                 />
+
               </div>
 
 
+              {/* Branch Name */}
+
               <div className="form-group">
-                <label>Branch Name</label>
+
+                <label>
+                  {t("branchName")}
+                </label>
 
                 <input
                   type="text"
                   name="branchName"
-                  placeholder="Enter branch name"
+                  placeholder={t("branchNamePlaceholder")}
                   value={form.branchName}
                   onChange={handleChange}
                 />
+
               </div>
 
 
+              {/* IFSC Code */}
+
               <div className="form-group">
+
                 <label>
-                  IFSC Code <span>*</span>
+                  {t("ifscCode")} <span>*</span>
                 </label>
 
                 <input
                   type="text"
                   name="ifscCode"
-                  placeholder="Eg: SBIN0001234"
+                  placeholder={t("ifscPlaceholder")}
                   value={form.ifscCode}
                   onChange={handleChange}
                 />
+
               </div>
 
 
+              {/* Account Number */}
+
               <div className="form-group">
+
                 <label>
-                  Account Number <span>*</span>
+                  {t("accountNumber")} <span>*</span>
                 </label>
 
                 <input
                   type="password"
                   name="accountNumber"
-                  placeholder="Enter account number"
+                  placeholder={t("accountNumberPlaceholder")}
                   value={form.accountNumber}
                   onChange={handleChange}
                 />
+
               </div>
 
 
+              {/* Confirm Account Number */}
+
               <div className="form-group">
+
                 <label>
-                  Confirm Account Number <span>*</span>
+                  {t("confirmAccountNumber")} <span>*</span>
                 </label>
 
                 <input
                   type="password"
                   name="confirmAccountNumber"
-                  placeholder="Re-enter account number"
+                  placeholder={t("confirmAccountPlaceholder")}
                   value={form.confirmAccountNumber}
                   onChange={handleChange}
                 />
+
               </div>
 
             </div>
@@ -407,14 +551,15 @@ function FarmerDetails() {
               className="back-button"
               onClick={() => navigate(-1)}
             >
-              Back
+              {t("back")}
             </button>
+
 
             <button
               type="submit"
               className="continue-button"
             >
-              Complete Registration →
+              {t("completeRegistration")} →
             </button>
 
           </div>
@@ -428,4 +573,3 @@ function FarmerDetails() {
 }
 
 export default FarmerDetails;
-

@@ -289,5 +289,25 @@
   .slot-button {
     font-size: 13px;
   }
+  .slot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.slot-header .language {
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .slot-header {
+    align-items: center;
+  }
+
+  .slot-header .language select {
+    font-size: 13px;
+  }
+}
 }
 

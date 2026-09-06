@@ -1,12 +1,14 @@
-
 import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 import "../style/SlotBooking.css";
+import LanguageSelector from "../components/LanguageSelector";
 
 function SlotBooking() {
-
   const location = useLocation();
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const center = location.state?.center;
 
@@ -21,9 +23,8 @@ function SlotBooking() {
   ];
 
   const bookSlot = () => {
-
     if (!slot) {
-      alert("Please select a slot");
+      alert(t("selectSlotError"));
       return;
     }
 
@@ -33,7 +34,6 @@ function SlotBooking() {
         slot
       }
     });
-
   };
 
   return (
@@ -41,36 +41,47 @@ function SlotBooking() {
 
       <div className="slot-card">
 
-        {/* Header */}
+        {/* ================= HEADER ================= */}
+
         <div className="slot-header">
-          <h2>Book Procurement Slot</h2>
-          <p>
-            Select a convenient time to visit the procurement center.
-          </p>
+
+          <div>
+            <h2>{t("bookProcurementSlot")}</h2>
+
+            <p>
+              {t("bookProcurementSlotDescription")}
+            </p>
+          </div>
+
+          <LanguageSelector />
+
         </div>
 
 
-        {/* Center Information */}
+        {/* ================= CENTER INFORMATION ================= */}
+
         <div className="center-info">
 
           <h3>
-            📍 {center?.name || "Procurement Center"}
+            📍 {center?.name || t("procurementCenter")}
           </h3>
 
           <p>
-            Distance: {center?.distance || "Not available"}
+            {t("distance")}:{" "}
+            {center?.distance || t("notAvailable")}
           </p>
 
         </div>
 
 
-        {/* Slot Selection */}
+        {/* ================= SLOT SELECTION ================= */}
+
         <div className="slot-section-title">
 
-          <h3>Select Time Slot</h3>
+          <h3>{t("selectTimeSlot")}</h3>
 
           <p>
-            Choose one available time slot.
+            {t("selectTimeSlotDescription")}
           </p>
 
         </div>
@@ -82,6 +93,7 @@ function SlotBooking() {
 
             <button
               key={item}
+              type="button"
               className={`slot-button ${
                 slot === item ? "selected" : ""
               }`}
@@ -95,21 +107,25 @@ function SlotBooking() {
         </div>
 
 
-        {/* Confirm */}
+        {/* ================= CONFIRM ================= */}
+
         <button
+          type="button"
           className="confirm-button"
           onClick={bookSlot}
         >
-          Confirm Slot
+          {t("confirmSlot")}
         </button>
 
 
-        {/* Back */}
+        {/* ================= BACK ================= */}
+
         <button
+          type="button"
           className="back-button"
           onClick={() => navigate(-1)}
         >
-          Go Back
+          {t("goBack")}
         </button>
 
       </div>
@@ -119,4 +135,3 @@ function SlotBooking() {
 }
 
 export default SlotBooking;
-
