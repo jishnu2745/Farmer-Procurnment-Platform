@@ -1,15 +1,15 @@
 package com.farmerprocurement.backend.repository;
 
-import com.farmerprocurement.backend.entity.Farmer;
+import com.farmerprocurement.backend.entity.FarmerDetails;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
 
-public interface FarmerRepository extends JpaRepository<Farmer, Long> {
+public interface FarmerRepository extends JpaRepository<FarmerDetails, Long> {
 
-    Optional<Farmer> findByMobileNumber(String mobileNumber);
+    Optional<FarmerDetails> findByMobileNumber(String mobileNumber);
 
-    Optional<Farmer> findByAadhaarNumber(String aadhaarNumber);
+    Optional<FarmerDetails> findByAadhaarNumber(String aadhaarNumber);
 
     boolean existsByMobileNumber(String mobileNumber);
 

@@ -1,57 +1,28 @@
-package com.farmerprocurement.backend.entity;
+package com.farmerprocurement.backend.dto;
 
-import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
-@Entity
-@Table(name = "land_details")
-public class LandDetails {
+public class LandRequest {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @Column(nullable = false)
+    @NotBlank
     private String surveyNumber;
 
-    @Column
     private String subDivisionNumber;
 
-    @Column(nullable = false)
+    @NotNull
     private Double landArea;
 
-    @Column(nullable = false)
+    @NotBlank
     private String landUnit;
 
-    @Column(nullable = false)
+    @NotBlank
     private String ownershipType;
 
-    /*
-     * Many land records can belong to one farmer.
-     */
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "farmer_id", nullable = false)
-    private FarmerDetails farmer;
+    @NotBlank
+    private String crop;
 
-
-    // =========================
-    // Constructors
-    // =========================
-
-    public LandDetails() {
-    }
-
-
-    // =========================
-    // Getters and Setters
-    // =========================
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
+    // getters and setters
 
     public String getSurveyNumber() {
         return surveyNumber;
@@ -93,11 +64,11 @@ public class LandDetails {
         this.ownershipType = ownershipType;
     }
 
-    public FarmerDetails getFarmer() {
-        return farmer;
+    public String getCrop() {
+        return crop;
     }
 
-    public void setFarmer(FarmerDetails farmer) {
-        this.farmer = farmer;
+    public void setCrop(String crop) {
+        this.crop = crop;
     }
 }

@@ -1,7 +1,7 @@
 package com.farmerprocurement.backend.controller;
 
 import com.farmerprocurement.backend.dto.FarmerRegistrationRequest;
-import com.farmerprocurement.backend.entity.Farmer;
+import com.farmerprocurement.backend.entity.FarmerDetails;
 import com.farmerprocurement.backend.service.FarmerService;
 
 import jakarta.validation.Valid;
@@ -21,14 +21,20 @@ public class FarmerController {
         this.farmerService = farmerService;
     }
 
-    @PostMapping("/register")
-    public ResponseEntity<Farmer> registerFarmer(
+    @GetMapping("/test")
+    public String test() {
+        return "Farmer Controller is working";
+    }
+
+    @PostMapping("/farmer-details")
+    public ResponseEntity<FarmerDetails> registerFarmer(
             @Valid @RequestBody FarmerRegistrationRequest request) {
 
-        Farmer farmer = farmerService.registerFarmer(request);
+        FarmerDetails farmer = farmerService.registerFarmer(request);
 
         return ResponseEntity
                 .status(HttpStatus.CREATED)
                 .body(farmer);
     }
+
 }
